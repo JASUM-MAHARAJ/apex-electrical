@@ -1,0 +1,446 @@
+/* Apex Electrical - High-Conversion Trade Theme */
+:root {
+  --navy-dark: #0f172a;
+  --navy-light: #1e293b;
+  --amber-primary: #f59e0b;
+  --amber-hover: #d97706;
+  --bg-light: #f8fafc;
+  --white: #ffffff;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
+  --border-light: #e2e8f0;
+  --success-green: #10b981;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Top Emergency Banner */
+.emergency-bar {
+  background-color: var(--amber-primary);
+  color: var(--navy-dark);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Sticky Header */
+.site-header {
+  background-color: var(--navy-dark);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.logo span {
+  color: var(--amber-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--amber-primary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  font-weight: 700;
+  border-radius: var(--radius);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-amber {
+  background-color: var(--amber-primary);
+  color: var(--navy-dark);
+}
+
+.btn-amber:hover {
+  background-color: var(--amber-hover);
+  transform: translateY(-2px);
+}
+
+.btn-nav {
+  background-color: var(--amber-primary);
+  color: var(--navy-dark) !important;
+  padding: 0.55rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 700 !important;
+}
+
+.btn-outline-white {
+  border: 2px solid var(--white);
+  color: var(--white);
+  background: transparent;
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.90)),
+              url('images/hero.jpg') center/cover no-repeat;
+  color: var(--white);
+  padding: 5.5rem 1.5rem;
+}
+
+.hero-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(16, 185, 129, 0.15);
+  border: 1px solid var(--success-green);
+  color: #6ee7b7;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--success-green);
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: 2.85rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Hero Quick Callback Card */
+.hero-form-card {
+  background: var(--white);
+  color: var(--text-dark);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  border-top: 5px solid var(--amber-primary);
+}
+
+.hero-form-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero-form-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--amber-primary);
+}
+
+/* Trust Strip */
+.trust-strip {
+  background-color: var(--navy-light);
+  color: var(--white);
+  padding: 1.5rem;
+  border-bottom: 1px solid #334155;
+}
+
+.trust-grid {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Sections */
+.section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: var(--text-muted);
+}
+
+/* Services & Rates Grid */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.card-featured {
+  border: 2px solid var(--amber-primary);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.price-tag {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--navy-dark);
+  margin: 0.75rem 0;
+}
+
+.price-tag span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* Meet the Electrician Section */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.about-img {
+  width: 100%;
+  border-radius: var(--radius);
+  border-bottom: 5px solid var(--amber-primary);
+  display: block;
+}
+
+.about-badge {
+  color: var(--amber-hover);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0.4rem 0 1rem;
+}
+
+.about-text {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.credentials-list {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.credentials-list li {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: var(--navy-dark);
+}
+
+/* Suburbs Coverage Box */
+.coverage-box {
+  background-color: var(--navy-dark);
+  color: var(--white);
+  padding: 3rem 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.coverage-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.coverage-subtitle {
+  color: #cbd5e1;
+}
+
+.suburb-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.suburb-tag {
+  background-color: var(--navy-light);
+  border: 1px solid #334155;
+  padding: 0.5rem 1.1rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 0.85rem 1.3rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  z-index: 99;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #090d16;
+  color: #94a3b8;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* Utility Helper Classes */
+.pad-top-zero {
+  padding-top: 0 !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 850px) {
+  .hero-container,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .nav-links li:not(:last-child) {
+    display: none;
+  }
+}
