@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Dynamic Dispatch Status based on time of day
   const statusText = document.getElementById("dispatchStatus");
   const currentHour = new Date().getHours();
-
+const businessWhatsApp = "27672901090"; 
+const whatsappURL = `https://wa.me/${businessWhatsApp}?text=${encodeURIComponent(message)}`;
+window.open(whatsappURL, "_blank");
   if (statusText) {
     if (currentHour >= 7 && currentHour < 17) {
       statusText.textContent = "Day Shift Active • 3 Vans Available Now";
