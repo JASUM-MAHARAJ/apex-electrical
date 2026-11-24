@@ -45,28 +45,28 @@
       </div>
 
       <!-- Instant Callback Form -->
-      <div class="hero-form-card">
-        <h3>Request a 10-Min Callback</h3>
-        <p>Leave your details and our on-duty technician will phone you right back.</p>
-        <form id="callbackForm">
+      <form id="callbackForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="761ac851-a89a-4e04-9ebe-e04353947f3c" />
+          <input type="hidden" name="subject" value="Apex Electrical - 10-Min Callback Request" />
+          <input type="hidden" name="from_name" value="Apex Electrical Durban Website" />
+
           <div class="form-group">
-            <input type="text" id="clientName" class="form-control" placeholder="Your Name" required />
+            <input type="text" id="clientName" name="name" class="form-control" placeholder="Your Name" required />
           </div>
           <div class="form-group">
-            <input type="tel" id="clientPhone" class="form-control" placeholder="Phone / WhatsApp Number" required />
+            <input type="tel" id="clientPhone" name="phone" class="form-control" placeholder="Phone / WhatsApp Number" required />
           </div>
           <div class="form-group">
-            <select id="clientIssue" class="form-control">
-              <option>Emergency Power Outage / Tripping</option>
-              <option>DB Board / Circuit Breaker Repair</option>
-              <option>Electrical Compliance Certificate (COC)</option>
-              <option>Inverter / Backup Power Wiring</option>
-              <option>Geyser / Stove Element Fault</option>
+            <select id="clientIssue" name="issue" class="form-control">
+              <option value="Emergency Power Outage / Tripping">Emergency Power Outage / Tripping</option>
+              <option value="DB Board / Circuit Breaker Repair">DB Board / Circuit Breaker Repair</option>
+              <option value="Electrical Compliance Certificate (COC)">Electrical Compliance Certificate (COC)</option>
+              <option value="Inverter / Backup Power Wiring">Inverter / Backup Power Wiring</option>
+              <option value="Geyser / Stove Element Fault">Geyser / Stove Element Fault</option>
             </select>
           </div>
           <button type="submit" class="btn btn-amber full-width">Get Immediate Callback</button>
         </form>
-      </div>
     </div>
   </section>
 
